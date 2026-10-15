@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alphonso — Mango Merchants since 1962</title>
+<meta name="description" content="Twelve varieties of mango, netted by hand at peak ripeness and on your table within 72 hours of leaving the tree. Ratnagiri to your doorstep since 1962." />
+<meta name="theme-color" content="#FBF4E6" />
+
+<meta property="og:title" content="Alphonso — Mango Merchants since 1962" />
+<meta property="og:description" content="Mango season is open. Hand-netted at peak ripeness, tree to doorstep in 72 hours." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FBF4E6'/%3E%3Cpath d='M17 6c5 0 9 4.5 9 10.5S22 27 16.5 27 8 22.5 8 16.5 12 6 17 6Z' fill='%23F2A007'/%3E%3Cpath d='M17 6c1-3 3-4 5-4-1 2-2 4-5 4Z' fill='%233C6B37'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+<script>
+  /* Applied before first paint so reveal targets are hidden without a flash.
+     Removed again if the motion module never boots, so content is never trapped. */
+  document.documentElement.classList.add('has-motion');
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      if (!window.__motionReady) document.documentElement.classList.remove('has-motion');
+    }, 1600);
+  });
+</script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+
+<!-- ── icon sprite ─────────────────────────────────────────────────────── -->
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <symbol id="ic-mango" viewBox="0 0 200 200">
+      <path class="m-body" d="M104 26c40 1 74 39 74 87 0 47-36 75-78 75-42 0-76-31-76-79C24 63 62 25 104 26Z" style="fill:var(--mango,#F2A007)"/>
+      <path d="M178 113c0 47-36 75-78 75-21 0-41-8-55-23 14 12 32 18 52 18 42 0 78-28 78-75 0-13-3-25-8-37 7 13 11 27 11 42Z" fill="rgba(110,45,0,.22)"/>
+      <ellipse cx="76" cy="74" rx="24" ry="36" transform="rotate(-26 76 74)" fill="rgba(255,255,255,.4)"/>
+      <path d="M101 27c-3-11 1-19 9-24" fill="none" stroke="var(--stem,#6B4A22)" stroke-width="7" stroke-linecap="round"/>
+      <path d="M112 12c13-11 33-13 45-6-5 16-23 27-45 6Z" style="fill:var(--leaf,#3C6B37)"/>
+      <path d="M116 12c11-4 24-6 41-6" fill="none" stroke="rgba(0,0,0,.16)" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="ic-half" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="88" style="fill:var(--mango,#F2A007)"/>
+      <circle cx="100" cy="100" r="77" fill="#FFDA7C"/>
+      <circle cx="100" cy="100" r="77" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2"/>
+      <g stroke="rgba(255,255,255,.45)" stroke-width="2.5" stroke-linecap="round">
+        <path d="M100 23v14M100 163v14M23 100h14M163 100h14M45 45l10 10M145 145l10 10M155 45l-10 10M55 145l-10 10"/>
+      </g>
+      <ellipse cx="100" cy="100" rx="29" ry="43" fill="#F7E4BC"/>
+      <ellipse cx="100" cy="100" rx="29" ry="43" fill="none" stroke="rgba(160,110,40,.4)" stroke-width="2"/>
+      <ellipse cx="92" cy="88" rx="9" ry="14" fill="rgba(255,255,255,.55)"/>
+    </symbol>
+
+    <symbol id="ic-sun" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="9" style="fill:var(--mango,#F2A007)"/>
+      <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+        <path d="M20 2.5v5.5M20 32v5.5M2.5 20H8M32 20h5.5M7.4 7.4l4 4M28.6 28.6l4 4M32.6 7.4l-4 4M11.4 28.6l-4 4"/>
+      </g>
+    </symbol>
+
+    <symbol id="ic-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="ic-star" viewBox="0 0 24 24">
+      <path d="M12 2.6l2.7 6.1 6.6.6-5 4.4 1.5 6.5L12 16.8 6.2 20.2l1.5-6.5-5-4.4 6.6-.6z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress" aria-hidden="true"><i></i></div>
+<a class="skiplink" href="#main">Skip to content</a>
+
+<!-- ── marquee ─────────────────────────────────────────────────────────── -->
+<div class="tape" aria-hidden="true">
+  <div class="tape__track">
+    <div class="tape__group">
+      <span>Free delivery over $60</span><i>◆</i>
+      <span>Hand-netted in Ratnagiri</span><i>◆</i>
+      <span>Rested, never chilled</span><i>◆</i>
+      <span>Tree to doorstep in 72 hours</span><i>◆</i>
+      <span>Twelve varieties</span><i>◆</i>
+      <span>Est. 1962</span><i>◆</i>
+    </div>
+    <div class="tape__group">
+      <span>Free delivery over $60</span><i>◆</i>
+      <span>Hand-netted in Ratnagiri</span><i>◆</i>
+      <span>Rested, never chilled</span><i>◆</i>
+      <span>Tree to doorstep in 72 hours</span><i>◆</i>
+      <span>Twelve varieties</span><i>◆</i>
+      <span>Est. 1962</span><i>◆</i>
+    </div>
+  </div>
+</div>
+
+<!-- ── nav ─────────────────────────────────────────────────────────────── -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#ic-sun"/></svg>
+      <span class="brand__word">Alphonso</span>
+      <span class="brand__sub">Mango&nbsp;Co.</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#varieties">Varieties</a>
+      <a href="#season">Season</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#growers">Growers</a>
+    </nav>
+
+    <div class="nav__end">
+      <button class="cart" id="cart" type="button">
+        <span class="cart__label">Cart</span>
+        <span class="cart__n" id="cartN">0</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#varieties"><b>01</b> Varieties</a>
+      <a href="#season"><b>02</b> Season</a>
+      <a href="#ritual"><b>03</b> Ritual</a>
+      <a href="#growers"><b>04</b> Growers</a>
+      <a href="#cta"><b>05</b> First pick</a>
+    </nav>
+    <p class="menu__foot">Ratnagiri → your table, since 1962.</p>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── hero ──────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal>
+          <svg class="eyebrow__dot" viewBox="0 0 40 40" aria-hidden="true"><use href="#ic-sun"/></svg>
+          Ratnagiri → your table · est. 1962
+        </p>
+
+        <h1 class="hero__title">
+          <span class="w"><i data-reveal>Mango</i></span>
+          <span class="w"><i data-reveal>season</i></span>
+          <span class="w"><i data-reveal>is</i></span>
+          <span class="w"><i data-reveal class="wonk">open.</i></span>
+        </h1>
+
+        <p class="hero__lede" data-reveal>
+          Twelve varieties, netted by hand at peak ripeness and on your table within
+          <strong>72 hours</strong> of leaving the tree. No cold-stored impostors.
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--solid" href="#varieties">Shop the harvest <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#ritual">Meet the growers</a>
+        </div>
+
+        <dl class="hero__stats" data-reveal>
+          <div><dt>Varieties</dt><dd>12</dd></div>
+          <div><dt>Tree → door</dt><dd>72<span>hrs</span></dd></div>
+          <div><dt>Boxes shipped</dt><dd>1.4<span>m</span></dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__art">
+        <div class="sun" id="heroSun" aria-hidden="true"></div>
+        <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
+
+        <svg class="hero__mango" id="heroMango" viewBox="0 0 200 200" role="img" aria-label="A ripe Alphonso mango">
+          <use href="#ic-mango" width="200" height="200"/>
+        </svg>
+
+        <div class="orbit" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="orbitPath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+            <text><textPath href="#orbitPath" startOffset="0">SUN-RIPENED · HAND-PICKED · NEVER CHILLED · NETTED AT DAWN · </textPath></text>
+          </svg>
+        </div>
+
+        <div class="chip chip--a" data-reveal><b>Alphonso</b> in season</div>
+        <div class="chip chip--b" data-reveal><b>$18</b> / 3kg box</div>
+
+        <svg class="half" viewBox="0 0 200 200" aria-hidden="true" style="--mango:#E9781F"><use href="#ic-half" width="200" height="200"/></svg>
+      </div>
+    </div>
+
+    <div class="dots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ── varieties ─────────────────────────────────────────────────────── -->
+  <section class="varieties" id="varieties">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow" data-reveal>The harvest</p>
+        <h2 class="head__title" data-reveal>Pick your <em class="wonk">variety</em></h2>
+        <p class="head__lede" data-reveal>
+          Six cultivars, each with a stubborn personality. Every box is netted by hand at dawn
+          and rested — never chilled — on the way to you.
+        </p>
+      </header>
+
+      <div class="cards">
+        <article class="card" data-reveal style="--mango:#F2A007;--leaf:#3A6B33">
+          <span class="card__tag">The benchmark</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Alphonso</h3>
+          <p class="card__origin">Ratnagiri, Maharashtra</p>
+          <p class="card__notes">Honey · saffron · warm butter</p>
+          <div class="card__foot">
+            <span class="card__price">$18<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Alphonso">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>20° brix</b></span><i><u style="--w:100%"></u></i></div>
+        </article>
+
+        <article class="card" data-reveal style="--mango:#F7C43F;--leaf:#5B8B3A">
+          <span class="card__tag">Buttery</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Ataulfo</h3>
+          <p class="card__origin">Chiapas, Mexico</p>
+          <p class="card__notes">Crème brûlée · no fibre at all</p>
+          <div class="card__foot">
+            <span class="card__price">$16<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Ataulfo">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>19° brix</b></span><i><u style="--w:95%"></u></i></div>
+        </article>
+
+        <article class="card" data-reveal style="--mango:#F5B93E;--leaf:#4A7A38">
+          <span class="card__tag">Saffron threads</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Kesar</h3>
+          <p class="card__origin">Junagadh, Gujarat</p>
+          <p class="card__notes">Apricot · honeycomb · faint pine</p>
+          <div class="card__foot">
+            <span class="card__price">$15<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Kesar">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>18° brix</b></span><i><u style="--w:90%"></u></i></div>
+        </article>
+
+        <article class="card" data-reveal style="--mango:#8CAE3C;--leaf:#2F5D2A">
+          <span class="card__tag">Green outside</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Langra</h3>
+          <p class="card__origin">Varanasi, Uttar Pradesh</p>
+          <p class="card__notes">Lime zest · sugarcane · sherbet</p>
+          <div class="card__foot">
+            <span class="card__price">$14<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Langra">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>17° brix</b></span><i><u style="--w:85%"></u></i></div>
+        </article>
+
+        <article class="card" data-reveal style="--mango:#E9781F;--leaf:#356233">
+          <span class="card__tag">Big &amp; generous</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Kent</h3>
+          <p class="card__origin">Piura, Peru</p>
+          <p class="card__notes">White peach · resin · melon rind</p>
+          <div class="card__foot">
+            <span class="card__price">$17<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Kent">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>16° brix</b></span><i><u style="--w:80%"></u></i></div>
+        </article>
+
+        <article class="card" data-reveal style="--mango:#E0522B;--leaf:#2E5A31">
+          <span class="card__tag">Travels well</span>
+          <div class="card__art"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#ic-mango" width="200" height="200"/></svg></div>
+          <h3 class="card__name">Tommy Atkins</h3>
+          <p class="card__origin">São Francisco, Brazil</p>
+          <p class="card__notes">Blood orange · firm · tart-sweet</p>
+          <div class="card__foot">
+            <span class="card__price">$12<small>/3kg box</small></span>
+            <button class="add" type="button" data-add="Tommy Atkins">Add</button>
+          </div>
+          <div class="meter"><span>Sweetness <b>15° brix</b></span><i><u style="--w:75%"></u></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── season ────────────────────────────────────────────────────────── -->
+  <section class="season" id="season">
+    <div class="wrap">
+      <header class="head head--invert">
+        <p class="eyebrow" data-reveal>Calendar</p>
+        <h2 class="head__title" data-reveal>Every mango has <em class="wonk">its month</em></h2>
+        <p class="head__lede" data-reveal>
+          We follow the sun down the coast — Konkan to Chiapas to Piura. This is what's ripe, and when.
+        </p>
+      </header>
+
+      <div class="chart" data-reveal>
+        <div class="chart__scroll">
+          <div class="chart__months" aria-hidden="true">
+            <span></span><b>Mar</b><b>Apr</b><b>May</b><b>Jun</b><b>Jul</b><b>Aug</b>
+          </div>
+          <div class="chart__rows">
+            <div class="row" style="--c:#F2A007"><span class="row__name">Alphonso</span><div class="bar" style="--s:3;--e:5"><b>Apr – May</b></div></div>
+            <div class="row" style="--c:#F7C43F"><span class="row__name">Ataulfo</span><div class="bar" style="--s:2;--e:4"><b>Mar – Apr</b></div></div>
+            <div class="row" style="--c:#F5B93E"><span class="row__name">Kesar</span><div class="bar" style="--s:4;--e:6"><b>May – Jun</b></div></div>
+            <div class="row" style="--c:#8CAE3C"><span class="row__name">Langra</span><div class="bar" style="--s:5;--e:7"><b>Jun – Jul</b></div></div>
+            <div class="row" style="--c:#E0522B"><span class="row__name">Tommy Atkins</span><div class="bar" style="--s:3;--e:7"><b>Apr – Jul</b></div></div>
+            <div class="row" style="--c:#E9781F"><span class="row__name">Kent</span><div class="bar" style="--s:6;--e:8"><b>Jul – Aug</b></div></div>
+          </div>
+        </div>
+        <p class="chart__note" data-reveal>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#ic-sun"/></svg>
+          <span>Between harvests right now. Pre-orders for the next crop open in <b>March</b>.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ritual ────────────────────────────────────────────────────────── -->
+  <section class="ritual" id="ritual">
+    <div class="wrap">
+      <header class="head head--split">
+        <div>
+          <p class="eyebrow" data-reveal>The 72-hour rule</p>
+          <h2 class="head__title" data-reveal>From branch to <em class="wonk">breakfast</em></h2>
+        </div>
+        <p class="head__lede" data-reveal>
+          A mango keeps ripening after it's picked. Most supply chains stop that clock with cold.
+          We let it run — carefully, and on a timer.
+        </p>
+      </header>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step__n">01</span>
+          <h3>Netted at dawn</h3>
+          <p>Pickers climb before the heat, twisting each fruit free rather than pulling. Anything under 12° brix stays on the branch.</p>
+          <span class="step__meta">Hour 0</span>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__n">02</span>
+          <h3>Rested, not chilled</h3>
+          <p>Fruit is laid in rice straw and held at 12°C — warm enough that flavour keeps developing, cool enough that nothing spoils.</p>
+          <span class="step__meta">Hour 26</span>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__n">03</span>
+          <h3>Ripe when it arrives</h3>
+          <p>Boxed at the orchard gate, flown at night, and on your counter still firm to the squeeze. Two days on the shelf and it's perfect.</p>
+          <span class="step__meta">Hour 72</span>
+        </li>
+      </ol>
+
+      <div class="ritual__art" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 200 200" style="--mango:#F2A007"><use href="#ic-half" width="200" height="200"/></svg>
+        <p>Cross-section of a Ratnagiri Alphonso at 19° brix. Barely any fibre, all perfume.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── stats ─────────────────────────────────────────────────────────── -->
+  <section class="stats">
+    <div class="wrap stats__grid">
+      <div class="stat" data-reveal><b><span data-count="12">0</span></b><span>varieties, all season</span></div>
+      <div class="stat" data-reveal><b><span data-count="34">0</span></b><span>partner farms</span></div>
+      <div class="stat" data-reveal><b><span data-count="3204">0</span></b><span>boxes a week</span></div>
+      <div class="stat" data-reveal><b>4.9<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-star"/></svg></b><span>from 2,180 reviews</span></div>
+    </div>
+  </section>
+
+  <!-- ── voices ────────────────────────────────────────────────────────── -->
+  <section class="voices" id="growers">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow" data-reveal>The windfall letters</p>
+        <h2 class="head__title" data-reveal>What lands on <em class="wonk">the table</em></h2>
+      </header>
+
+      <div class="quotes">
+        <figure class="quote quote--a" data-reveal>
+          <div class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg></div>
+          <blockquote>I have bought mangoes every summer for thirty years and have never once had a box arrive at the right stage. This one did.</blockquote>
+          <figcaption><b>Meera Raghunathan</b><span>Chennai, second season</span></figcaption>
+        </figure>
+
+        <figure class="quote quote--b" data-reveal>
+          <div class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg></div>
+          <blockquote>We put the Ataulfo on the dessert menu as a crème brûlée with mango instead of sugar. Guests asked for the supplier.</blockquote>
+          <figcaption><b>Tobias Lund</b><span>Chef, Copenhagen</span></figcaption>
+        </figure>
+
+        <figure class="quote quote--c" data-reveal>
+          <div class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg></div>
+          <blockquote>My grandfather sold to this company in 1971. Same family on the gate, same rice straw in the crate. Nothing has been optimised away.</blockquote>
+          <figcaption><b>Arjun Deshpande</b><span>Grower, Devgad</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── cta ───────────────────────────────────────────────────────────── -->
+  <section class="cta" id="cta">
+    <div class="sun sun--cta" aria-hidden="true"></div>
+    <div class="wrap cta__inner">
+      <p class="eyebrow" data-reveal>The windfall</p>
+      <h2 class="cta__title" data-reveal>Get <em class="wonk">first pick.</em></h2>
+      <p class="cta__lede" data-reveal>
+        One letter a season — what's ripening, what's running out, and a two-hour head start on every box.
+        Join 8,400 readers.
+      </p>
+
+      <form class="signup" id="signup" novalidate data-reveal>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@kitchen.com" autocomplete="email" required />
+        <button class="btn btn--solid" type="submit">Reserve my box</button>
+      </form>
+      <p class="signup__note" id="signupNote" data-reveal>No spam. One letter per season. Unsubscribe in a click.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ── footer ──────────────────────────────────────────────────────────── -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#ic-sun"/></svg>
+        <p>Mango merchants since 1962.<br />Ratnagiri · Chiapas · Piura.</p>
+      </div>
+
+      <nav class="foot__cols" aria-label="Footer">
+        <div>
+          <h4>Shop</h4>
+          <a href="#varieties">Alphonso</a>
+          <a href="#varieties">Kesar</a>
+          <a href="#varieties">Ataulfo</a>
+          <a href="#varieties">Gift boxes</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#ritual">Our ritual</a>
+          <a href="#growers">Growers</a>
+          <a href="#season">Harvest calendar</a>
+          <a href="#cta">The windfall</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#cta">Ripening guide</a>
+          <a href="#cta">Shipping</a>
+          <a href="#cta">Returns</a>
+          <a href="#cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <p class="foot__word" aria-hidden="true">Alphonso</p>
+
+    <div class="foot__bottom">
+      <span>© <span id="year">2026</span> Alphonso Mango Co.</span>
+      <span>Made with sunshine in Ratnagiri</span>
+      <button class="totop" id="totop" type="button">Back to top ↑</button>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
